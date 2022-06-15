@@ -1,0 +1,227 @@
+:root {
+    --main-green: rgb(68, 170, 99);
+    --background-green: rgba(68, 170, 99, .2);
+    --dark-text-and-box-shadow: rgba(0, 0, 0, 0.177);
+    --linear-gradient: rgba(0, 0, 0, 0.4);
+}
+
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em 6%;
+    min-height: 100vh;
+    background-image: linear-gradient(var(--linear-gradient),rgba(0, 0, 0, 0.1)),url("../resources/images/background.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    color: white;
+    z-index: 2;
+}
+
+header.short {
+    min-height: auto;
+    padding: 10em 1em 6em;
+    background-image: none;
+}
+
+header.short h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+header#wildlife {
+    background-image: linear-gradient(var(--linear-gradient),rgba(0, 0, 0, 0.1)),url("../resources/images/wildlife_bg.jpg");
+    background-position: center;
+}
+
+header#beach {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.3)),url("../resources/images/beach_bg.jpg");
+    background-position: center;
+}
+
+header#activity {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.35)),url("../resources/images/surfing.jpg");
+    background-position: center;
+}
+
+header#heritage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.35)),url("../resources/images/heritage_bg.jpg");
+    background-position: top;
+}
+
+header#food {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),var(--linear-gradient)),url("../resources/images/food_bg.jpg");
+    background-position: center;
+}
+
+header h1, h3{
+    text-shadow: .1em .1em .15em var(--dark-text-and-box-shadow);
+}
+
+header h3 {
+    font-size: 2em;
+}
+
+header h1 {
+    font-size: 12em;
+    font-family: 'Smooch','cursive';
+}
+
+header p {
+    max-width: 70%;
+}
+
+header a{
+    margin-top: 4em;
+}
+
+header a:after{
+    content: none;
+    margin: 0;
+}
+
+header .mobile_navigation {
+    display: none;
+}
+
+header.short .home_icon {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    header p {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    
+    header.short h1 {
+        font-size: 5em;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    header.short h1 {
+        font-size: 4.5em;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    
+    header.short h1 {
+        font-size: 3em;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    header h1 {
+        font-size: 8em;
+    }
+
+}
+
+@media screen and (max-width: 725px) {
+
+    header{
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        text-align: left;
+        row-gap: 5em;
+    }
+
+    header h1 {
+        font-size: 6em;
+    }
+
+    header h3 {
+        font-size: 1.5em;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    header a#nav, header p {
+        display: none;
+    }
+
+    header a {
+        margin-top:0;
+    }
+
+    header .mobile_navigation {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: left;
+        gap: 1em;
+        width: 100%;
+    }
+
+    header .mobile_navigation#description {
+        flex-flow: row nowrap;
+    }
+
+    header .mobile_navigation#description a {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    header .mobile_navigation a {
+        padding: .5em 2em;
+        border-radius: 2em;
+        background-color: rgba(255, 255, 255, 0.5);
+        color:black;
+        font-weight: 700;
+    }
+
+    header .mobile_navigation a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    header .mobile_navigation a:after {
+        content:'';
+    }
+
+    header .mobile_navigation a:hover:after {
+        margin: 0;
+    }
+
+    header .mobile_navigation img {
+        display: inline;
+        max-width: 8.5em;
+    }
+
+    header.short {
+        padding-top: 8em;
+        gap: 2em;
+    }
+
+    header.short .home_icon {
+        display: block;
+        position: fixed;
+        top: 1em;
+        left: 1em;
+    }
+
+    header.short img {
+        box-shadow: 0 .5em .8em var(--dark-text-and-box-shadow);
+        border-radius: 2em;
+        width: 50px;
+    }
+
+    header.short img:hover {
+        transform: scale(1.1, 1.1);
+    }
+
+}

@@ -1,0 +1,534 @@
+:root {
+    --main-green: rgb(68, 170, 99);
+    --background-green: rgba(68, 170, 99, .2);
+    --dark-text-and-box-shadow: rgba(0, 0, 0, 0.177);
+    --linear-gradient: rgba(0, 0, 0, 0.4);
+}
+
+/*home, beaches, wildlife & activities pages*/
+
+.background {
+    width: 100%;
+    background-color: transparent;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 0;
+    background-position: center;
+}
+
+.background#beach {
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/beach_bg.jpg")
+}
+
+.background#wildlife {
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/wildlife_bg.jpg");
+}
+
+.background#activity {
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/scuba-diving.jpg");
+    background-position: top;
+}
+
+.background#heritage {
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/heritage_bg.jpg");
+}
+
+.background#food {
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/spices.jpg");
+    background-position: top;
+}
+
+/*activity page backgrounds*/
+
+.background#surfing{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/surfing.jpg")
+}
+
+.background#safaris{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/safaris.jpg")
+}
+
+.background#scuba-diving{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/scuba-diving.jpg")
+}
+
+.background#white-water-rafting{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/white-water-rafting.jpg")
+}
+
+.background#heritage{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/heritage_bg.jpg");
+    background-position: top;
+}
+
+/*beaches page backgrounds*/
+
+.background#mount-lavinia{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/mt.lavania.jpg")
+}
+
+.background#arugam-bay{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/arugambay.jpg")
+}
+
+.background#mirissas-coast{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/mirissa\'s-coast.jpg")
+}
+
+/*food page background*/
+
+.background#ceylon-spices {
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/spices.jpg");
+    background-position: top;
+}
+
+.background#aurudu-food{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/aurudu-food.jpg")
+}
+
+.background#main-course{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/main_course.jpg")
+}
+
+.background#side-dishes{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/side_dishes_bg.jpg")
+}
+
+/*heritage page backgrounds*/
+
+.background#sigiriya{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/sigiriya.jpg")
+}
+
+.background#dalada-maligawa{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/dalada_maligawa.jpg")
+}
+
+.background#dambulla-cave-temple{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/dambulla-cave-temple.jpg")
+}
+
+/*wildlife page backgrounds*/
+
+.background#yala{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/yala_bg.jpg")
+}
+
+.background#hikkaduwa-marine{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/hikkaduwa_bg.jpg");
+    background-position: center;
+}
+
+.background#minneriya{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/minneriya_bg.jpg")
+}
+
+.background#wilpattu{
+    background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient)), url("../resources/images/wilpattu_bg.jpg")
+}
+
+.background#hortan-plains{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),var(--linear-gradient)), url("../resources/images/hortanplains_bg.jpg")
+}
+
+.background#table{
+    background-image: url("../resources/images/table_bg.jpg")
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.223);
+    color: rgb(255, 255, 255);
+    -webkit-backdrop-filter: blur(4em);
+    backdrop-filter: blur(4em);
+}
+
+section.card {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-content: center;
+    column-gap: 3em;
+    position:relative;
+    padding: 2em;
+    margin: 0 6%;
+    box-shadow: .5em .5em .8em var(--dark-text-and-box-shadow);
+    border-radius: 1em;
+    overflow: hidden;
+    
+}
+
+section.card_type2 {
+    padding: 2em;
+    margin: 0 6%;
+    box-shadow: .5em .5em .8em var(--dark-text-and-box-shadow);
+    border-radius: 1em;
+}
+
+section.card_type2 a {
+    display: block;
+}
+
+section.card_type2 h2 {
+    padding-bottom: 1em;
+}
+
+section.card#wildlife {
+    grid-template-columns: 40% 55%;
+}
+
+section.card .description {
+    display: flex;
+    flex-flow: column;
+    row-gap: 1.5em;
+    width: 100%;
+} 
+
+section.card .image, section.card .map {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+section.card .image img {
+    border-radius: 1em;
+    width: 100%;
+    height: auto
+}
+
+section.card .map iframe{
+    border-radius: 1em;
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin: 0;
+}
+
+section.card .description .extra-images {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+}
+
+section.card .description .extra-images img {
+    height: 100%;
+    max-height: 280px;
+    width: auto;
+}
+
+section.card .description .extra-images .image {
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;}
+
+section.table {
+    position: relative;
+    padding: 2em;
+    margin: 0 6%;
+    box-shadow: .5em .5em .8em var(--dark-text-and-box-shadow);
+    border-radius: 1em;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+section.table table {
+    width: 100%;
+    border-spacing: 5px;
+}
+
+section.table table td, th {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: .5em;
+    padding: .5em 1em;
+    text-align: center;
+}
+
+section.table thead td {
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+section.card .description a {
+    position: absolute;
+    bottom: 1.5em;
+    right: 1.5em;
+}
+
+section.card a:after {
+    content:'\276F';
+    margin-left: .6em;
+    margin-right: .4em;
+}
+
+section.card a:hover:after {
+    margin-left: 1em;
+    margin-right: 0;
+    transition: .2s ease-in-out;
+}
+
+section.card .description li a {
+    position: static;
+}
+
+section.card ul.like-buttons, ul.item_tags {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em
+}
+
+section.card ul.like-buttons li {
+    background-color: rgba(0, 0, 0, 0.197);
+    border-radius: 5em;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+section.card .description dl dd {
+    padding: 1% 3%;
+}
+
+section.card .description dl dd p {
+    padding: 1% 3%;
+}
+
+/*faqs, contact us & purchase & donate pages*/
+
+section.card#faqs {
+    padding:0;
+    grid-template-columns: 100%;
+    background-color: white;
+    margin:0 10%;
+    margin-bottom: 5em;
+    color: var(--main-green);
+
+}
+
+section.card#faqs h2 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+    text-align:center;
+}
+
+section.card#faqs dl{
+    padding:0;
+    color: black;
+}
+
+section.card#faqs dl dt, dd {
+    box-sizing: border-box;
+    padding: 1.5em 4em;
+    width: 100%;
+}
+
+section.card#faqs dl dt {
+    background-color: var(--background-green);
+    color: var(--main-green)
+}
+
+section.card#contact {
+    margin:0 auto;
+    grid-template-columns: 45% auto;
+    padding:0;
+    gap:0;
+    background-color: white;
+    margin: 0 12.5% 12.5%;
+}
+
+section.card#contact .form_container{
+    background-color: white;
+    justify-content: left;
+}
+
+section.card .info_container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
+    background-color: var(--background-green);
+    text-align:center;
+}
+
+section.card .info_container .info {
+    padding: 2em;
+    background-color:white;
+    border-radius: .5em;
+    color: var(--main-green);
+    height: fit-content;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1em
+} 
+
+section.card .info p {
+    background-color:rgba(68, 170, 99, .1);
+    padding: .5em 1em;
+    border-radius:2em;
+}
+
+section.card .info h3 {
+    text-shadow: none;
+    color: black;
+}
+
+/*donation*/
+
+section.card#donation{
+    justify-items:center;
+    padding:0;
+    column-gap:2em;
+    margin-bottom: 5em;
+    background-color: white;
+}
+
+section.card#donation h1, section.card#contact h1 {
+    color: black;
+    margin: 1em;
+    text-align:center;
+}
+
+section.card .form_container {
+    padding: 2em;
+}
+
+section.card .info_container {
+    padding: 2em 3em;
+}
+
+section.card .store_container{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content:center;
+    grid-row: auto;
+    gap: 2em;
+    background-color: var(--background-green);
+    margin:0;
+    padding: 2em 0;
+}
+
+section.card .store_container h1{
+    grid-area: 1/1/2/3;
+}
+
+section.card .store_container ul.item_tags li {
+    padding:.2em 1em;
+    font-size:.8em;
+    background-color:rgba(68, 170, 99, .1);
+    color: var(--main-green);
+    border-radius: 5em;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 1200px) {
+
+    section.card { 
+        display: flex;
+        flex-flow: column;
+        justify-content:center;
+        row-gap: 1em;
+    }
+
+    section.card .description {
+        padding-bottom:0;
+    }
+
+    section .description, section .image, section .map {
+        width: 100%;
+    }
+
+    section.card .description a{
+        position: static;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    section.card#faqs {
+        margin: 1em;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    section.card { 
+        border: none;
+        padding: 0;
+        padding-bottom: 4%;
+    }
+
+    section.card .image img {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    section.card .map iframe {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    section.card .description {
+        padding: 0 4%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .background {
+        padding: 2em 0;
+    }
+
+    section.table {
+        padding: 5%;
+    }
+
+    section.table thead td {
+        font-size: 15px;
+    }
+
+    section.table table {
+        font-size: 10px;
+    }
+
+    section.table table td, th {
+        padding: 5px;
+    }
+
+    section.card .store_container {
+        grid-template-columns: 80%;
+    }
+    
+    section.card .store_container h1{
+        grid-area: 1/1/2/2;
+    }
+
+    section.card#contact {
+        margin: 1em;
+    }
+
+    section.card#donation {
+        margin: 1em;
+    }
+
+    section.card .description .extra-images {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+    }
+
+    section.card .description .extra-images img {
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 310px) {
+    
+    section.table {
+        padding: 0;
+    }
+}

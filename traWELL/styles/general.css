@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Smooch);
+
+* {
+    margin: 0;
+    font-family:'Montserrat', 'serif';
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(111, 164, 127)
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p a {
+    text-decoration: underline
+}
+
+a:after {
+    content: '\276F';
+    margin-left: .6em;
+    margin-right: .4em;
+}
+
+a:hover:after {
+    margin-left: 1em;
+    margin-right: 0;
+    transition: .2s ease-in-out;
+}
+
+ul.like-buttons, ul.item_tags {
+    padding: 0;
+}
+
+ul.like-buttons li, ul.item_tags li {
+    list-style-type: none;
+    margin: 0;
+    padding: .5em 1.3em;
+}
+
+ol li {
+    list-style-type: upper-roman;
+    padding: .2em ;
+}
+
+ul.discs li {
+    list-style-type: circle;
+    padding: .2em;
+}

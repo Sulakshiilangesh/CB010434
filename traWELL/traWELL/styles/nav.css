@@ -1,0 +1,110 @@
+:root {
+    --main-green: rgb(68, 170, 99);
+    --background-green: rgba(68, 170, 99, .2);
+    --dark-text-and-box-shadow: rgba(0, 0, 0, 0.177);
+    --linear-gradient: rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: center;
+    min-height: 3.5em;
+    position: fixed;
+    top: .85em;
+    margin: 0 3%;
+    width: 94%;
+    background-color:rgb(255, 255, 255);
+    z-index: 2;
+    box-shadow: 0em .3em .6em var(--dark-text-and-box-shadow);
+    border-radius: 2em;
+}
+
+nav .links {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+    width: max-content;
+    font-size: .85em;
+} 
+
+nav .links a{
+    width: auto;
+    padding: .5em .85em;
+    color:rgba(78, 78, 78, 0.777);
+    height: fit-content;
+    position: relative;
+    font-weight: bold;
+}
+
+nav .links a:after {
+    content:'';
+    margin: 0;
+}
+
+nav .links a:hover {
+    color: black;
+}
+
+nav .links a:hover:after {
+    content: '';
+    width: 1em;
+    height: .1em;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+
+nav .links a.active {
+    color: black;
+}
+
+nav .links a.active:after {
+    content: '';
+    width: 1em;
+    height: .1em;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+
+nav img {
+    height: fit-content;
+    max-width: 150px;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1200px) {
+
+    nav {
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+
+    nav .links#links-right {
+        padding-right: 2em;
+    }
+
+    nav img{
+        padding-left: 2em;
+    }
+
+    nav #links-left, nav #disappear {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 725px) {
+
+    nav {
+        display: none;
+    }
+
+}

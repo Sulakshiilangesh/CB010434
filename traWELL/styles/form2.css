@@ -1,0 +1,61 @@
+form {
+    margin: 0;
+    padding: 1em;
+    border-radius: .5em;
+    color: black;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.5em;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+input, select {
+    padding: .8em 1.5em;
+    outline: none;
+    max-width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--main-green);
+    background-color: var(--background-green);
+}
+
+form #ticketchoice label {
+    margin-right: 2%;
+}
+
+input[type=radio] {
+    margin-right: 2%
+}
+
+form input[type=submit], form input[type=reset] {
+    background-color: rgb(46, 113, 66);
+    border: none;
+    border-radius: 2em;
+    color: white;
+}
+
+form #ticket_number input[type=number] {
+    width: 49.4%;
+}
+
+input:focus:invalid {
+    outline: none;
+    border: 2px solid rgb(208, 116, 116);
+    background-color: rgb(254, 228, 228);
+}
+
+@media screen and (min-width: 515px){
+    .break {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    form input[type=number] {
+        width: 100%;
+    }
+}
